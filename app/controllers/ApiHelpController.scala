@@ -2,6 +2,7 @@ package controllers
 
 import play.mvc.Controller
 import play.modules.swagger.ApiHelpInventory
+import play.Logger
 
 /**
   * This controller exposes swagger compatiable help apis.<br/>
@@ -12,22 +13,9 @@ import play.modules.swagger.ApiHelpInventory
   *
   */
 object ApiHelpController extends Controller {
+  def catchAll() = {
+    Logger.info("ApiHelpController.catchAll got called. This should not happen; SwaggerPlugin.rawInvocation should be intercepting and processing this call")
 
-  /**
-    * Get a list of all top level resources
-    */
-  def getResources() = {
-    Json(ApiHelpInventory.getResources())
-  }
-
-  /**
-    * Get detailed API/models for a given resource
-    */
-  def getResourceHelp(name: String) = {
-    ApiHelpInventory.getResourceHelp(name) match {
-      case Some(response) => Json(response)
-      case None => NotFound
-    }
   }
 
 
