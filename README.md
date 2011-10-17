@@ -14,6 +14,31 @@ You need the following installed and available in your $PATH:
 
 ### To build
 
+The swagger-play module depends on swagger-core-1.1, which is not in a public repo as of 
+now.  Please clone and build that project:
+
+<pre>
+git clone git@github.com:wordnik/swagger-core.git
+
+cd swagger-core
+ant
+</pre>
+
+Get the dependencies for the swagger-play module:
+
+<pre>
+play deps
+</pre>
+
+after building, copy the swagger-core-1.1.jar into your lib folder:
+
+<pre>
+rm lib/swagger-core.*
+cp ../swagger-play/build/swagger-core-1.1.jar ./lib
+</pre>
+
+Now you can build the module:
+
 <pre>
 play build-module
 </pre>
