@@ -34,7 +34,7 @@ after building, copy the swagger-core-1.1.jar into your lib folder:
 
 <pre>
 rm lib/swagger-core.*
-cp ../swagger-play/build/swagger-core-1.1.jar ./lib
+cp ../swagger-core/build/swagger-core-1.1.jar ./lib
 </pre>
 
 Now you can build the module:
