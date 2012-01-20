@@ -2,7 +2,7 @@ self: play -> swagger-play 0.1
 
 require:
     - play
-    - com.wordnik -> swagger-core_2.9.1 1.1-SNAPSHOT.120119:
+    - com.wordnik -> swagger-core_2.8.1 1.1-SNAPSHOT.120119:
         exclude:
           - org.slf4j -> *
 
