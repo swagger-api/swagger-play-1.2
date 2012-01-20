@@ -10,14 +10,15 @@ For more information about Wordnik's APIs, please visit http://developer.wordnik
 ### Prerequisites
 You need the following installed and available in your $PATH:
 
-<li>- Play Framework 1.2.3
+<li>- Play Framework 1.2.x
 
 <li>- Scala 2.8.1  (http://www.scala-lang.org)
 
 ### To build
 
-The swagger-play module depends on swagger-core_2.8.1-1.1-SNAPSHOT.  If not available in a public maven repo, you can
-build locally from https://github.com/wordnik/swagger-core/tree/scala-2.8.1
+The swagger-play module depends on swagger-core_2.8.1-1.1.  You can find this artifact in a public maven repo:
+
+https://oss.sonatype.org/content/repositories/releases/com/wordnik/swagger-core_2.8.1/
 
 Get the dependencies for the swagger-play module:
 
