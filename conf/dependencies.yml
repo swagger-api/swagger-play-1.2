@@ -2,6 +2,13 @@ self: play -> swagger-play 0.1
 
 require:
     - play
-    - com.wordnik -> swagger-core 1.1-SNAPSHOT.121132:
+    - com.wordnik -> swagger-core_2.9.1 1.1-SNAPSHOT.120119:
         exclude:
           - org.slf4j -> *
+
+repositories:
+    - zenexity:
+        type:       iBiblio
+        root:       "https://oss.sonatype.org/content/repositories/releases/"
+        contains:
+            - com.wordnik -> *
