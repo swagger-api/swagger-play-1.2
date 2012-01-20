@@ -5,9 +5,10 @@ require:
     - com.wordnik -> swagger-core_2.8.1 1.1-SNAPSHOT.120119:
         exclude:
           - org.slf4j -> *
+          - org.jboss.weld -> *
 
 repositories:
-    - zenexity:
+    - sonatype:
         type:       iBiblio
         root:       "https://oss.sonatype.org/content/repositories/releases/"
         contains:
