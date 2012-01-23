@@ -23,6 +23,7 @@ https://oss.sonatype.org/content/repositories/releases/com/wordnik/swagger-core_
 Get the dependencies for the swagger-play module:
 
 <pre>
+export SCALA_HOME=path/to/scala-2.8.1
 play deps --sync
 play build-module
 </pre>
