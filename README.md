@@ -1,11 +1,15 @@
 # Swagger Play Framework Module
 
+## Disclaimer
+
+**This project is maintained and no support will be provided. It is available as-is for your reference. Keep in mind it produces an old version of the Swagger specification which is soon to reach an end-of-life state.**
+
 ## Overview
 This is a project to add swagger to play-framework; an implementation of the Swagger spec.  
-You can find out more about both the spec and the framework at http://swagger.wordnik.com.  
+You can find out more about both the spec and the framework at http://swagger.io.  
 For more information about Wordnik's APIs, please visit http://developer.wordnik.com.  
 
-(This is for Play 1.2.x. If you're working with Play 2.0 Beta, please look at https://github.com/ayush/swagger-play2)
+(This is for Play 1.2.x. If you're working with Play 2.0 and above, please look at https://github.com/swagger-api/swagger-core)
 
 ### Prerequisites
 You need the following installed and available in your $PATH:
